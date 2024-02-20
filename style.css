@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth; /*faz o scroll mais suave */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    display: flex; /* dispoe os elementos na horizontal */
+    justify-content: space-around; /* alinha os elementos na horizontal */
+    align-items: center; /* alinha os elementos na vertical */
+    background-color: cadetblue;
+    padding: 15px;
+    text-align: center; /* centra os texto */
+}
+
+.titulo {
+    border: none;
+    color: white;
+}
+
+
+
+header div a:hover {
+   background-color: aliceblue;
+   color: cadetblue;
+}
+
+
+header div a {
+  text-decoration: none;
+  color: white ;
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+main {
+    width: 80%; /* a width define a largura do elemento */
+    /* o auto insere o elemento no meio da pagina*/
+    margin: 20px auto;
+}
+
+.negrito {
+    font-weight: bold; /* a letra fica a negrito */
+}
+
+p {
+    line-height: 30px; /* da espaço entre as linhas */
+}
+
+.janela {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.texto {
+    line-height: 20px;
+    margin-bottom: 20px;
+ 
+}
+
+img {
+    width: 100%;
+}
+.link-detalhes {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.detalhes {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block; /* permite aplicar margin num elemento inline */
+    margin: 20px 0px;
+    
+
+}
+
+form {
+    width: 60%;
+    margin: 20px auto;
+}
+
+form label, 
+form input, /* é um campo do formulario para escrevermos */
+form textarea {
+    display: block; /* converte um elemneto inline num elemnto block que ocupa toda a linha */
+    width: 100%;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form input[ type="submit"] {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 105%;
+}
+
+footer {
+    background-color: cadetblue;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 760px) { 
+    header {
+   flex-direction: column;
+   gap: 15px;
+
+}
+
+header div a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+main {
+        width: 80%;
+    }
+    
+form {
+        width: 80%;
+    }
+
+}
+
+
